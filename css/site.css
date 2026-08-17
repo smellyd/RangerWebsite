@@ -177,6 +177,39 @@ section {
   --bs-btn-disabled-border-color: var(--rgc-secondary);
 }
 
+.btn-outline-primary {
+  --bs-btn-color: var(--rgc-primary);
+  --bs-btn-border-color: var(--rgc-primary);
+  --bs-btn-hover-color: var(--rgc-white);
+  --bs-btn-hover-bg: var(--rgc-primary);
+  --bs-btn-hover-border-color: var(--rgc-primary);
+  --bs-btn-focus-shadow-rgb: 146, 0, 10;
+  --bs-btn-active-color: var(--rgc-white);
+  --bs-btn-active-bg: var(--rgc-primary-dark);
+  --bs-btn-active-border-color: var(--rgc-primary-dark);
+  --bs-btn-disabled-color: var(--rgc-secondary);
+  --bs-btn-disabled-border-color: var(--rgc-secondary);
+}
+
+.service-card {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 100%;
+}
+
+.service-card-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: 62px;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .icon-square {
   background-color: var(--rgc-accent) !important;
   color: var(--rgc-secondary) !important;
@@ -193,9 +226,175 @@ section {
   border-radius: 0.5rem;
 }
 
+.contact-option {
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid var(--rgc-accent);
+  border-radius: 0.5rem;
+}
+
+.contact-option-icon {
+  color: var(--rgc-primary);
+  font-size: 2rem;
+}
+
+.contact-option a {
+  font-weight: 600;
+}
+
+.contact-expectations {
+  max-width: 860px;
+}
+
+.page-hero {
+  padding-top: 9.5rem;
+  padding-bottom: 5rem;
+  background-color: var(--rgc-neutral-light);
+}
+
+.eyebrow {
+  margin-bottom: 0.75rem;
+  color: var(--rgc-primary);
+  font-family: var(--rgc-display-font);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.service-hero-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.answer-summary {
+  padding: 2rem;
+  color: var(--rgc-white);
+  background-color: var(--rgc-primary);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(74, 85, 104, 0.15);
+}
+
+.answer-summary h2 {
+  color: var(--rgc-white);
+}
+
+.section-intro,
+.cta-copy {
+  max-width: 760px;
+}
+
+.service-checklist {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+  font-size: 1.1rem;
+}
+
+.service-checklist li + li {
+  margin-top: 0.75rem;
+}
+
+.info-card {
+  padding: 1.75rem;
+  background-color: #fff;
+  border: 1px solid var(--rgc-accent);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 1rem rgba(74, 85, 104, 0.08);
+}
+
+.info-card-icon {
+  color: var(--rgc-primary);
+  font-size: 2rem;
+}
+
+.process-number {
+  display: inline-flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--rgc-white);
+  background-color: var(--rgc-primary);
+  border-radius: 50%;
+  font-family: var(--rgc-display-font);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.cta-band {
+  color: var(--rgc-white);
+  background-color: var(--rgc-primary);
+}
+
+.breadcrumb-item a {
+  color: var(--rgc-primary);
+}
+
+.partner-logo-panel {
+  display: flex;
+  min-height: 280px;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid var(--rgc-accent);
+  border-radius: 0.75rem;
+}
+
+.category-card {
+  display: flex;
+  min-height: 110px;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  color: var(--rgc-primary);
+  background-color: var(--rgc-neutral-light);
+  border: 1px solid var(--rgc-accent);
+  border-radius: 0.75rem;
+  font-family: var(--rgc-display-font);
+  font-weight: 700;
+  text-align: center;
+}
+
+.availability-note {
+  padding: 1rem 1.25rem;
+  background-color: #fff;
+  border-left: 4px solid var(--rgc-primary);
+  border-radius: 0.25rem;
+}
+
+.location-card {
+  padding: 1.5rem;
+  background-color: var(--rgc-neutral-light);
+  border: 1px solid var(--rgc-accent);
+  border-radius: 0.75rem;
+}
+
+.location-card h3 {
+  color: var(--rgc-primary);
+}
+
+.county-columns {
+  columns: 2;
+  padding-left: 1.25rem;
+}
+
+.county-columns li {
+  margin-bottom: 0.5rem;
+  break-inside: avoid;
+}
+
+.faq-item {
+  padding: 1.5rem;
+  background-color: var(--rgc-neutral-light);
+  border: 1px solid var(--rgc-accent);
+  border-radius: 0.75rem;
+}
+
 .image-box figcaption {
-  font-size: 0.65rem;
-  padding-top: 0.3rem;
+  display: none;
 }
 
 .belmed-logo {

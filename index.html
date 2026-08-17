@@ -15,11 +15,11 @@
 
     <meta
       name="description"
-      content="Ranger Gas Co. delivers oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, breathing air, restaurant CO2, and gas blends across Upstate SC."
+      content="Ranger Gas Co. delivers oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, breathing air, restaurant CO2, and beer blends across Upstate SC."
     >
     <meta
       name="keywords"
-      content="medical gas supplier Greenville SC, liquid oxygen delivery SC, breathing air supplier, helium delivery Upstate SC, dental nitrous oxide delivery, oxygen cylinders Spartanburg SC, liquid nitrogen delivery Anderson SC, restaurant CO2 Greenville, oxygen nitrogen blends restaurants"
+      content="medical gas supplier Greenville SC, liquid oxygen delivery SC, breathing air supplier, helium delivery Upstate SC, dental nitrous oxide delivery, oxygen cylinders Spartanburg SC, liquid nitrogen delivery Anderson SC, restaurant CO2 Greenville, beer blends restaurants"
     >
     <meta name="author" content="Ranger Gas Co.">
     <meta name="robots" content="index, follow">
@@ -27,7 +27,7 @@
     <link rel="canonical" href="https://rangergasco.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Medical Gas Supplier in Greenville, Spartanburg & Anderson SC | Ranger Gas Co.">
-    <meta property="og:description" content="Local delivery for oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, breathing air, restaurant CO2, oxygen/nitrogen blends, and Belmed equipment across Upstate South Carolina.">
+    <meta property="og:description" content="Local delivery for oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, breathing air, restaurant CO2, beer blends, and Belmed equipment across Upstate South Carolina.">
     <meta property="og:url" content="https://rangergasco.com/">
     <meta property="og:image" content="https://rangergasco.com/assets/img/Ranger%20Gas%20Co%20(Color).png">
     <meta name="twitter:card" content="summary_large_image">
@@ -48,61 +48,97 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": ["LocalBusiness", "MedicalBusiness"],
-        "@id": "https://rangergasco.com/#business",
-        "name": "Ranger Gas Co.",
-        "url": "https://rangergasco.com/",
-        "logo": "https://rangergasco.com/assets/RangerGasCo.svg",
-        "image": "https://rangergasco.com/assets/img/Ranger%20Gas%20Co%20(Color).png",
-        "description": "Local medical, dental, veterinary, and restaurant gas supplier delivering oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, breathing air, CO2, and oxygen/nitrogen blends across Upstate South Carolina.",
-        "areaServed": [
-          { "@type": "State", "name": "South Carolina" },
-          { "@type": "City", "name": "Greenville, SC" },
-          { "@type": "City", "name": "Spartanburg, SC" },
-          { "@type": "City", "name": "Anderson, SC" },
-          { "@type": "City", "name": "Greer, SC" },
-          { "@type": "City", "name": "Simpsonville, SC" }
-        ],
-        "knowsAbout": ["medical gas delivery", "oxygen cylinders", "liquid oxygen delivery", "nitrous oxide delivery", "nitrogen delivery", "liquid nitrogen delivery", "helium delivery", "breathing air", "CO2 restaurant gas", "oxygen nitrogen blends", "dental gases", "Belmed medical gas equipment"],
-        "telephone": "+1-864-528-7979",
-        "email": "support@rangergasco.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "SC",
-          "addressCountry": "US"
-        },
-        "priceRange": "$$",
-        "makesOffer": [
+        "@graph": [
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Medical gas delivery",
-              "serviceType": "Medical oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, and breathing air delivery"
-            }
+            "@type": "LocalBusiness",
+            "@id": "https://rangergasco.com/#business",
+            "name": "Ranger Gas Co.",
+            "legalName": "DDNC LLC",
+            "alternateName": "DDNC LLC DBA Ranger Gas Co.",
+            "foundingDate": "2025",
+            "url": "https://rangergasco.com/",
+            "logo": "https://rangergasco.com/assets/RangerGasCo.svg",
+            "image": "https://rangergasco.com/assets/img/Ranger%20Gas%20Co%20(Color).png",
+            "description": "Local medical, dental, veterinary, and restaurant gas supplier delivering oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, breathing air, CO2, and beer blends across Upstate South Carolina.",
+            "areaServed": [
+              { "@type": "AdministrativeArea", "name": "Abbeville County" },
+              { "@type": "AdministrativeArea", "name": "Anderson County" },
+              { "@type": "AdministrativeArea", "name": "Cherokee County" },
+              { "@type": "AdministrativeArea", "name": "Greenville County" },
+              { "@type": "AdministrativeArea", "name": "Greenwood County" },
+              { "@type": "AdministrativeArea", "name": "Laurens County" },
+              { "@type": "AdministrativeArea", "name": "McCormick County" },
+              { "@type": "AdministrativeArea", "name": "Oconee County" },
+              { "@type": "AdministrativeArea", "name": "Pickens County" },
+              { "@type": "AdministrativeArea", "name": "Spartanburg County" },
+              { "@type": "AdministrativeArea", "name": "Union County" }
+            ],
+            "knowsAbout": ["medical gas delivery", "industrial gas delivery", "oxygen cylinders", "liquid oxygen delivery", "nitrous oxide delivery", "nitrogen delivery", "liquid nitrogen delivery", "helium delivery", "breathing air", "CO2 restaurant gas", "beer blends", "dental gases", "Belmed medical gas equipment"],
+            "telephone": "+1-864-528-7979",
+            "email": "support@rangergasco.com",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer service",
+              "telephone": "+1-864-528-7979",
+              "email": "support@rangergasco.com",
+              "availableLanguage": "English",
+              "areaServed": "Upstate South Carolina"
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "17:00"
+            },
+            "makesOffer": [
+              { "@type": "Offer", "itemOffered": { "@id": "https://rangergasco.com/medical-gas-delivery/#service" } },
+              { "@type": "Offer", "itemOffered": { "@id": "https://rangergasco.com/restaurant-co2-delivery/#service" } },
+              { "@type": "Offer", "itemOffered": { "@id": "https://rangergasco.com/veterinary-medical-gases/#service" } },
+              { "@type": "Offer", "itemOffered": { "@id": "https://rangergasco.com/belmed-equipment/#service" } }
+            ],
+            "sameAs": [
+              "https://www.instagram.com/rangergasco",
+              "https://www.linkedin.com/company/ranger-gas-co",
+              "https://maps.app.goo.gl/8S4LgBBznT84smXd9",
+              "https://www.facebook.com/profile.php?id=61570990654003"
+            ]
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Restaurant CO2 and gas blend delivery",
-              "serviceType": "Scheduled CO2, oxygen blend, and nitrogen blend delivery for beverage systems"
-            }
+            "@type": "Service",
+            "@id": "https://rangergasco.com/medical-gas-delivery/#service",
+            "name": "Medical and dental gas delivery",
+            "url": "https://rangergasco.com/medical-gas-delivery/",
+            "serviceType": "Medical-grade oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, carbon dioxide, and breathing air cylinder delivery",
+            "provider": { "@id": "https://rangergasco.com/#business" },
+            "areaServed": "Upstate South Carolina"
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Belmed equipment support",
-              "serviceType": "Authorized Belmed dealer support in Upstate South Carolina"
-            }
+            "@type": "Service",
+            "@id": "https://rangergasco.com/restaurant-co2-delivery/#service",
+            "name": "Restaurant CO2 and beer blend delivery",
+            "url": "https://rangergasco.com/restaurant-co2-delivery/",
+            "serviceType": "CO2 and beer blend cylinder delivery for beer and soda systems",
+            "provider": { "@id": "https://rangergasco.com/#business" },
+            "areaServed": "Upstate South Carolina"
+          },
+          {
+            "@type": "Service",
+            "@id": "https://rangergasco.com/veterinary-medical-gases/#service",
+            "name": "Veterinary medical gas delivery",
+            "url": "https://rangergasco.com/veterinary-medical-gases/",
+            "serviceType": "Medical-grade oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, carbon dioxide, and breathing air cylinder delivery for veterinary customers",
+            "provider": { "@id": "https://rangergasco.com/#business" },
+            "areaServed": "Upstate South Carolina"
+          },
+          {
+            "@type": "Service",
+            "@id": "https://rangergasco.com/belmed-equipment/#service",
+            "name": "Belmed equipment sales and support",
+            "url": "https://rangergasco.com/belmed-equipment/",
+            "serviceType": "Authorized Belmed equipment sales, eligible installation, replacement parts, and warranty support coordination",
+            "provider": { "@id": "https://rangergasco.com/#business" },
+            "areaServed": "Upstate South Carolina"
           }
-        ],
-        "sameAs": [
-          "https://www.instagram.com/rangergasco",
-          "https://www.linkedin.com/company/ranger-gas-co",
-          "https://share.google/XK0VHqAgIflCCOVeQ",
-          "https://www.facebook.com/profile.php?id=61570990654003"
         ]
       }
     </script>
@@ -113,26 +149,74 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What medical gases does Ranger Gas Co. deliver?",
+            "name": "Which certified medical-grade gases does Ranger Gas Co. deliver?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ranger Gas Co. delivers medical grade oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, and breathing air for medical, dental, and veterinary customers in Upstate South Carolina. Customers can ask about gases not listed on the site."
+              "text": "Ranger Gas Co. delivers certified medical-grade oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, carbon dioxide, and breathing air for medical, dental, and veterinary customers in Upstate South Carolina. Industrial-grade gases are also available."
             }
           },
           {
             "@type": "Question",
-            "name": "Does Ranger Gas Co. serve Greenville, Spartanburg, and Anderson?",
+            "name": "Does Ranger Gas Co. serve the entire Upstate South Carolina region?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Ranger Gas Co. serves Greenville, Spartanburg, Anderson, Greer, Simpsonville, and surrounding Upstate South Carolina communities."
+              "text": "Yes. Ranger Gas Co. serves the entire Upstate South Carolina region, including Greenville, Spartanburg, Laurens, Anderson, Easley, Pickens, Seneca, and surrounding communities."
             }
           },
           {
             "@type": "Question",
-            "name": "Can Ranger Gas Co. help restaurants with CO2 and gas blends?",
+            "name": "Can Ranger Gas Co. help restaurants with CO2 and beer blends?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Ranger Gas Co. provides scheduled restaurant CO2 delivery plus oxygen and nitrogen blends for beverage service and hospitality customers."
+              "text": "Yes. Ranger Gas Co. provides restaurant CO2 and beer blend delivery for beer and soda systems, with weekly cylinder rentals available for events."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are estimates free, and are long-term contracts required?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Estimates from Ranger Gas Co. are free, and customers are not required to sign a long-term contract."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Ranger Gas Co. refill customer-owned cylinders?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Ranger Gas Co. can refill customer-owned cylinders that are certified. Customers may also rent containers from Ranger Gas Co."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I request emergency gas delivery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Call Ranger Gas Co. at (864) 528-7979 to request emergency delivery. After-hours emergency delivery depends on whether the requested gas is available in the warehouse."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Ranger Gas Co. supply helium?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Helium cylinder supply is available for customers across the industries Ranger Gas Co. serves. Ask the team about availability for your organization's application."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly does Ranger Gas Co. respond to inquiries?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ranger Gas Co. typically responds within 1–2 business hours during normal business hours, Monday through Friday from 9:00 a.m. to 5:00 p.m."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Belmed equipment can Ranger Gas Co. install?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ranger Gas Co. installs eligible Belmed components that attach directly to a cylinder or do not require plumbing. The company does not install equipment that is part of a plumbed gas system."
             }
           }
         ]
@@ -167,7 +251,7 @@
               </a>
             </li>
             <li class="nav-item me-lg-3">
-              <a class="nav-link" href="https://share.google/XK0VHqAgIflCCOVeQ" target="_blank" rel="noopener noreferrer" aria-label="View Ranger Gas Co. on Google Business">
+              <a class="nav-link" href="https://maps.app.goo.gl/8S4LgBBznT84smXd9" target="_blank" rel="noopener noreferrer" aria-label="View Ranger Gas Co. on Google Maps">
                 <i class="bi bi-google social-icon"></i>
               </a>
             </li>
@@ -177,7 +261,7 @@
               </a>
             </li>
             <li class="nav-item"><a class="nav-link me-lg-3" href="#products">Products</a></li>
-            <li class="nav-item"><a class="nav-link me-lg-3" href="#serviceAreas">Service Areas</a></li>
+            <li class="nav-item"><a class="nav-link me-lg-3" href="service-areas/index.html">Service Areas</a></li>
             <li class="nav-item"><a class="nav-link me-lg-3" href="#aboutUs">About Us</a></li>
             <li class="nav-item"><a class="nav-link me-lg-3" href="#faq">FAQ</a></li>
             <li class="nav-item"><a class="nav-link me-lg-3" href="#cta">Contact</a></li>
@@ -196,7 +280,7 @@
             <div class="mb-5 mb-lg-0 text-center text-lg-start">
               <h1 class="hero-heading lh-1 mb-3">Medical & Restaurant Gas Delivery in Upstate South Carolina</h1>
               <p class="lead fw-normal text-muted mb-5">
-                Ranger Gas Co. delivers oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, breathing air, restaurant CO<sub>2</sub>, and gas blends for medical, dental, veterinary, and hospitality customers in Greenville, Spartanburg, Anderson, and surrounding communities.
+                Ranger Gas Co. delivers oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, breathing air, restaurant CO<sub>2</sub>, and beer blends for medical, dental, veterinary, and hospitality customers in Greenville, Spartanburg, Anderson, and surrounding communities.
               </p>
             </div>
           </div>
@@ -211,8 +295,8 @@
       <section id="products">
         <div class="container px-4 px-lg-5">
           <div class="row gx-5 justify-content-around">
-            <div class="col-md-4 mb-5">
-              <article class="text-center">
+            <div class="col-md-4 mb-5 d-flex">
+              <article class="service-card text-center">
                 <figure class="image-box">
                   <picture>
                     <source type="image/webp" srcset="assets/img/medGas-800.webp 800w, assets/img/medGas-1200.webp 1200w" sizes="(min-width: 768px) 33vw, 100vw">
@@ -224,11 +308,12 @@
                 </figure>
                 <h2 class="h3">Medical & Dental Gas Supplier</h2>
                 <p>Reliable delivery for medical grade oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, and breathing air. We support dental practices, clinics, surgical centers, and care facilities with transparent pricing and responsive local service.</p>
+                <a class="btn btn-outline-primary service-card-action" href="medical-gas-delivery/index.html">Explore Medical &amp; Dental Gas Delivery</a>
               </article>
             </div>
 
-            <div class="col-md-4 mb-5">
-              <article class="text-center">
+            <div class="col-md-4 mb-5 d-flex">
+              <article class="service-card text-center">
                 <figure class="image-box">
                   <picture>
                     <source type="image/webp" srcset="assets/img/restaurantTap-800.webp 800w, assets/img/restaurantTap-1200.webp 1200w" sizes="(min-width: 768px) 33vw, 100vw">
@@ -238,13 +323,14 @@
                     Photo by <a href="https://www.pexels.com/photo/woman-standing-facing-soda-dispenser-1267256/" target="_blank" rel="noopener noreferrer">Elevate</a> on <a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">Pexels</a>
                   </figcaption>
                 </figure>
-                <h2 class="h3">Restaurant CO<sub>2</sub> and Gas Blends</h2>
-                <p>Never run out of CO<sub>2</sub> again. We provide scheduled CO<sub>2</sub> deliveries plus oxygen and nitrogen blends for restaurants, bars, beverage programs, and hospitality operators.</p>
+                <h2 class="h3">Restaurant CO<sub>2</sub> and Beer Blends</h2>
+                <p>Never run out of CO<sub>2</sub> again. We provide scheduled CO<sub>2</sub> and beer blend deliveries for restaurants, bars, beverage programs, events, and hospitality operators.</p>
+                <a class="btn btn-outline-primary service-card-action" href="restaurant-co2-delivery/index.html">Explore Restaurant CO<sub>2</sub> Delivery</a>
               </article>
             </div>
 
-            <div class="col-md-4 mb-5">
-              <article class="text-center">
+            <div class="col-md-4 mb-5 d-flex">
+              <article class="service-card text-center">
                 <figure class="image-box">
                   <picture>
                     <source type="image/webp" srcset="assets/img/vetPhoto-800.webp 800w, assets/img/vetPhoto-1200.webp 1200w" sizes="(min-width: 768px) 33vw, 100vw">
@@ -255,7 +341,8 @@
                   </figcaption>
                 </figure>
                 <h2 class="h3">Veterinary Medical Gases</h2>
-                <p>Trust the purity your animals deserve. We provide reliable oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, breathing air, and related gas support for veterinary practices across the Upstate.</p>
+                <p>Trust the purity your animals deserve. We provide reliable oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, CO<sub>2</sub>, breathing air, and equipment support for veterinary practices across the Upstate.</p>
+                <a class="btn btn-outline-primary service-card-action" href="veterinary-medical-gases/index.html">Explore Veterinary Medical Gases</a>
               </article>
             </div>
           </div>
@@ -274,7 +361,7 @@
         <div class="container px-4 px-lg-5">
           <div class="row gx-5 align-items-start">
             <div class="col-lg-5 mb-4 mb-lg-0">
-              <h2 class="display-heading brand-red">Local Gas Delivery for Greenville, Spartanburg, and Anderson</h2>
+              <h2 class="display-heading brand-red">Gas Delivery Across Upstate South Carolina</h2>
               <p class="fs-5 text-muted">
                 Ranger Gas Co. is built for businesses that want a local gas supplier instead of a distant call center. Our team serves Upstate South Carolina with scheduled routes, flexible refill support, and direct communication.
               </p>
@@ -286,9 +373,12 @@
                   <ul class="seo-list">
                     <li>Greenville, SC</li>
                     <li>Spartanburg, SC</li>
+                    <li>Laurens, SC</li>
                     <li>Anderson, SC</li>
-                    <li>Greer, Simpsonville, Mauldin, Easley, and nearby Upstate communities</li>
+                    <li>Easley, Pickens, and Seneca, SC</li>
+                    <li>All surrounding Upstate communities</li>
                   </ul>
+                  <p class="mt-3 mb-0"><a href="service-areas/index.html">View complete service-area details</a></p>
                 </div>
                 <div class="col">
                   <h3 class="h5">Gases We Deliver</h3>
@@ -298,7 +388,7 @@
                     <li>Nitrogen and liquid nitrogen</li>
                     <li>Helium and breathing air</li>
                     <li>Restaurant and beverage CO<sub>2</sub></li>
-                    <li>Oxygen and nitrogen blends for restaurants</li>
+                    <li>Beer blends for beer and soda systems</li>
                   </ul>
                 </div>
                 <div class="col">
@@ -339,6 +429,7 @@
                 <p class="fs-5 text-muted mb-0">
                   Ranger Gas Co. is proud to be an authorized Belmed dealer serving the Upstate South Carolina region, including Greenville, Spartanburg, Anderson, and surrounding communities. Belmed is a trusted leader in medical gas equipment, and as an authorized dealer, we provide access to their full line of products backed by local, expert service you can count on.
                 </p>
+                <p class="mt-3 mb-0"><a class="btn btn-outline-primary" href="belmed-equipment/index.html">Explore Belmed Equipment &amp; Support</a></p>
               </div>
             </div>
           </div>
@@ -355,7 +446,7 @@
               <div class="col-lg-10">
                 <h2 class="text-white display-1 lh-1 mb-4">4 Friends 1 Mission</h2>
                 <p class="text-white fs-5 lh-lg mx-auto about-copy">
-                  Our story is built on discipline and integrity. Founded by four friends, our 20 years of combined experience in gas delivery, medical, and logistics means we treat every client and every delivery with unwavering attention to detail.
+                  Our story is built on discipline and integrity. Ranger Gas Co. was founded in 2025 by four friends and is operated by DDNC LLC. Our 20 years of combined experience in gas delivery, medical, and logistics means we treat every client and every delivery with unwavering attention to detail.
                 </p>
                 <p class="text-white fs-5 lh-lg mt-3 mx-auto about-copy">
                   As a local, independent business, we guarantee your needs come first. If your facility requires a refill days before your schedule, we adapt. We promise on-time delivery, every time, regardless of short notice or changing business demands. That's the standard we live by.
@@ -370,20 +461,17 @@
         <div class="container px-4 px-lg-5">
           <div class="row gx-5 justify-content-center">
             <div class="col-lg-10">
-              <h2 class="display-heading brand-red text-center mb-5">Medical Gas Delivery FAQ</h2>
-              <div class="row g-4">
-                <div class="col-md-4">
-                  <h3 class="h5">What medical gases do you deliver?</h3>
-                  <p>We deliver medical grade oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, helium, and breathing air for healthcare, dental, and veterinary customers.</p>
-                </div>
-                <div class="col-md-4">
-                  <h3 class="h5">Do you serve Greenville, Spartanburg, and Anderson?</h3>
-                  <p>Yes. We serve Greenville, Anderson, Spartanburg, Greer, Simpsonville, Easley, Mauldin, and nearby Upstate South Carolina communities.</p>
-                </div>
-                <div class="col-md-4">
-                  <h3 class="h5">Can you supply restaurant CO<sub>2</sub> and blends?</h3>
-                  <p>Yes. We provide scheduled CO<sub>2</sub> delivery plus oxygen and nitrogen blends for restaurants, bars, beverage programs, cafes, and hospitality operators.</p>
-                </div>
+              <h2 class="display-heading brand-red text-center mb-5">Gas Delivery &amp; Equipment FAQ</h2>
+              <div class="row g-4 row-cols-1 row-cols-md-2">
+                <div class="col"><article class="faq-item h-100"><h3 class="h5">Which certified medical-grade gases do you deliver?</h3><p class="mb-0">We deliver certified medical-grade oxygen, liquid oxygen, nitrous oxide, nitrogen, liquid nitrogen, carbon dioxide, and breathing air for medical, dental, and veterinary customers. Industrial-grade gases are also available.</p></article></div>
+                <div class="col"><article class="faq-item h-100"><h3 class="h5">Do you serve the entire Upstate South Carolina region?</h3><p class="mb-0">Yes. We serve the entire Upstate region, including Greenville, Spartanburg, Laurens, Anderson, Easley, Pickens, Seneca, and surrounding communities.</p></article></div>
+                <div class="col"><article class="faq-item h-100"><h3 class="h5">Can you supply restaurant CO<sub>2</sub> and beer blends?</h3><p class="mb-0">Yes. We provide CO<sub>2</sub> and beer blend delivery for beer and soda systems, with weekly cylinder rentals available for events.</p></article></div>
+                <div class="col"><article class="faq-item h-100"><h3 class="h5">Are estimates free, and are long-term contracts required?</h3><p class="mb-0">Estimates are free, and customers are not required to sign a long-term contract.</p></article></div>
+                <div class="col"><article class="faq-item h-100"><h3 class="h5">Can you refill customer-owned cylinders?</h3><p class="mb-0">Yes. We can refill customer-owned cylinders that are certified. Customers may also rent containers from Ranger Gas Co.</p></article></div>
+                <div class="col"><article class="faq-item h-100"><h3 class="h5">How do I request emergency gas delivery?</h3><p class="mb-0">Call <a href="tel:+18645287979">(864) 528-7979</a>. After-hours emergency delivery depends on whether the requested gas is available in our warehouse.</p></article></div>
+                <div class="col"><article class="faq-item h-100"><h3 class="h5">Do you supply helium?</h3><p class="mb-0">Yes. Helium cylinder supply is available across the industries we serve. Ask about availability for your organization's application.</p></article></div>
+                <div class="col"><article class="faq-item h-100"><h3 class="h5">How quickly do you respond to inquiries?</h3><p class="mb-0">We typically respond within 1–2 business hours during normal business hours, Monday through Friday from 9:00 a.m. to 5:00 p.m.</p></article></div>
+                <div class="col"><article class="faq-item h-100"><h3 class="h5">Which Belmed equipment can you install?</h3><p class="mb-0">We install eligible components that attach directly to a cylinder or do not require plumbing. We do not install equipment that is part of a plumbed gas system.</p></article></div>
               </div>
               <p class="text-center fs-5 text-muted mt-5 mb-0">
                 Do not see the gas you need? Contact us and we will confirm whether we can source it for your operation.
@@ -397,11 +485,49 @@
         <div class="container px-4 pt-3 pb-5">
           <h2 class="pb-1 border-bottom text-center display-heading brand-red">Request Service</h2>
           <p class="text-center fs-5 text-muted mt-3 mb-0">
-            Request medical gas delivery, dental nitrous oxide, oxygen cylinders, liquid oxygen, liquid nitrogen, helium, breathing air, restaurant CO<sub>2</sub>, or oxygen/nitrogen blend service in Upstate South Carolina. If you do not see the gas you need listed, ask us.
+            Request medical or industrial gas delivery, dental nitrous oxide, oxygen cylinders, liquid oxygen, liquid nitrogen, helium, breathing air, restaurant CO<sub>2</sub>, or beer blend service in Upstate South Carolina. If you do not see the gas you need listed, ask us.
           </p>
+
+          <div class="row g-4 mt-4 justify-content-center contact-options">
+            <div class="col-md-4">
+              <div class="contact-option h-100 text-center">
+                <i class="bi bi-telephone-fill contact-option-icon" aria-hidden="true"></i>
+                <h3 class="h5 mt-3">Call Us</h3>
+                <p class="mb-0">
+                  <a href="tel:+18645287979">(864) 528-7979</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-option h-100 text-center">
+                <i class="bi bi-envelope-fill contact-option-icon" aria-hidden="true"></i>
+                <h3 class="h5 mt-3">Email Us</h3>
+                <p class="mb-0">
+                  <a href="mailto:support@rangergasco.com">support@rangergasco.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-option h-100 text-center">
+                <i class="bi bi-clock-fill contact-option-icon" aria-hidden="true"></i>
+                <h3 class="h5 mt-3">Business Hours</h3>
+                <p class="mb-0">Monday–Friday, 9:00 a.m.–5:00 p.m.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-expectations mx-auto mt-4 text-center">
+            <p class="mb-2"><strong>Choose what works for you:</strong> call, email, or submit the request form below. We typically respond within 1–2 business hours.</p>
+            <p class="mb-0">We make every effort to assist our customers in emergency situations, including after hours. Emergency availability may vary.</p>
+          </div>
 
           <div class="quickbooks-form-shell mt-5">
             <script id="intuit-form-344365" src="https://form-assets-prod.mcf-prod.a.intuit.com/snippet/account/254759799?formId=344365" async></script>
+            <noscript>
+              <p class="mb-0 text-center">
+                The request form requires JavaScript. Please call <a href="tel:+18645287979">(864) 528-7979</a> or email <a href="mailto:support@rangergasco.com">support@rangergasco.com</a> for service.
+              </p>
+            </noscript>
           </div>
         </div>
       </section>
@@ -418,7 +544,7 @@
             <a href="https://www.linkedin.com/company/ranger-gas-co" target="_blank" rel="noopener noreferrer" class="text-white-50" aria-label="LinkedIn">
               <i class="bi bi-linkedin footer-icon"></i>
             </a>
-            <a href="https://share.google/XK0VHqAgIflCCOVeQ" target="_blank" rel="noopener noreferrer" class="text-white-50 ms-3" aria-label="Google Business">
+            <a href="https://maps.app.goo.gl/8S4LgBBznT84smXd9" target="_blank" rel="noopener noreferrer" class="text-white-50 ms-3" aria-label="Google Maps">
               <i class="bi bi-google footer-icon"></i>
             </a>
             <a href="https://www.facebook.com/profile.php?id=61570990654003" target="_blank" rel="noopener noreferrer" class="text-white-50 ms-3" aria-label="Facebook">
