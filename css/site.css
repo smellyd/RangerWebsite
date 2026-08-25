@@ -141,6 +141,10 @@ section {
   background-color: var(--rgc-primary);
 }
 
+#aboutUs {
+  scroll-margin-top: 105px;
+}
+
 .seo-section,
 .faq-section {
   background-color: #fff;
