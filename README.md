@@ -12,6 +12,15 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
+Internal page links use canonical directory URLs (for example,
+`medical-gas-delivery/`) to match the sitemap and canonical tags. For direct
+`file://` previews, `js/site.js` appends `index.html` to local directory links
+only; published HTTP/HTTPS links are not rewritten. Use the local server when
+previewing with JavaScript disabled.
+
+Run `node --test tests/navigation.test.cjs` to check canonical link consistency,
+local-file preview navigation, and fragment targets across all six pages.
+
 ## Structure
 
 - `index.html` - homepage content

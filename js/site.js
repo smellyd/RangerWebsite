@@ -1,3 +1,17 @@
+// Published links use canonical directory URLs. Only file previews need index.html.
+if (window.location.protocol === "file:") {
+  document.querySelectorAll("a[href]").forEach((link) => {
+    const href = link.getAttribute("href");
+    if (href.startsWith("#")) return;
+
+    const target = new URL(href, window.location.href);
+    if (target.protocol === "file:" && target.pathname.endsWith("/")) {
+      target.pathname += "index.html";
+      link.href = target.href;
+    }
+  });
+}
+
 document.querySelectorAll(".navbar-toggler").forEach((button) => {
   button.addEventListener("click", () => {
     const target = document.querySelector(button.dataset.bsTarget);
