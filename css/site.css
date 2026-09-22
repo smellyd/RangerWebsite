@@ -202,6 +202,12 @@ section {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .service-card > .h3 {
+    min-height: 2.4em;
+  }
+}
+
 .service-card-action {
   display: inline-flex;
   align-items: center;
