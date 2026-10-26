@@ -473,3 +473,18 @@ footer a:focus {
     object-fit: cover;
   }
 }
+
+@media (max-width: 575px) {
+  .ranger-lead-form-shell {
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .ranger-lead-form-shell p {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
