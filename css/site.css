@@ -225,7 +225,7 @@ section {
   color: var(--rgc-secondary) !important;
 }
 
-.quickbooks-form-shell {
+.ranger-lead-form-shell {
   max-width: 860px;
   min-height: 420px;
   margin-right: auto;
