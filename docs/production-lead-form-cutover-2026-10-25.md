@@ -1,11 +1,11 @@
 # Prepared production lead form cutover
 
-Status: prepared on `codex/production-lead-form-cutover`; not deployed. The current production site uses the Intuit embed in `index.html` at `#cta`. This branch replaces that embed with `https://app.rangergasco.com/lead-form`, a standalone link, and existing-customer phone guidance. The surrounding homepage and service pages are unchanged.
+This document records the pre-cutover baseline, release checks, and rollback. Before cutover, the production site used the Intuit embed in `index.html` at `#cta`. The change replaces that embed with `https://app.rangergasco.com/lead-form`, a standalone link, and existing-customer phone guidance. The surrounding homepage and service pages are unchanged.
 
 ## Source and deployment
 
 - Repository: `https://github.com/smellyd/RangerWebsite.git`; custom domain in `CNAME`: `rangergasco.com`.
-- `.github/workflows/static.yml` deploys the repository root to GitHub Pages on a push to `main` or manual `workflow_dispatch`. Do not merge or manually dispatch until production intake passes end-to-end verification.
+- `.github/workflows/static.yml` deploys the repository root to GitHub Pages on a push to `main` or manual `workflow_dispatch`. Production intake must pass end-to-end verification before this change reaches `main`.
 - Pre-cutover baseline: `f7b7290` (`Align homepage service card copy`). The original form uses Intuit account `254759799`, form `344365`. Keep that legacy endpoint active for browsers with the old page open.
 - Prepared candidate source was supplied in the Ranger App snapshot at `/Users/dereksmelser/Documents/ChatGPT/Ranger App/web/production-cutover/2026-10-25/`; this branch applies its `#cta` replacement and retains the existing shell styling.
 
