@@ -236,6 +236,26 @@ section {
   border-radius: 0.5rem;
 }
 
+.ranger-lead-form-viewport {
+  overflow: hidden;
+  border-radius: 16px;
+  background: #f7fafc;
+}
+
+.ranger-lead-form-viewport iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+}
+
+@media (min-width: 769px) {
+  .ranger-lead-form-viewport iframe {
+    height: 2020px;
+    margin-top: -120px;
+  }
+}
+
 .contact-option {
   padding: 1.5rem;
   background-color: #fff;
